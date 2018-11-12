@@ -1,0 +1,59 @@
+html, body {  
+   height: 100%;
+    margin: 0;
+    padding: 0;
+} 
+/*footer stick in bottom*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/*responsive typography*/
+html {
+font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+html {
+font-size: 1.2rem;
+}
+}
+
+@include media-breakpoint-up(md) {
+html {
+font-size: 1.4rem;
+}
+}
+
+@include media-breakpoint-up(lg) {
+html {
+font-size: 1.6rem;
+}
+}
+
+// champs validation form
+input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
